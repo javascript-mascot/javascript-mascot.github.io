@@ -1,4 +1,4 @@
-# JavaScript Mascot Website
+![Screenshot](./screenshot.png)
 
 The homepage of JavaScript mascot
 
