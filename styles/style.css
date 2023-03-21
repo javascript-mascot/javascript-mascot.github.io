@@ -62,6 +62,7 @@ a:visited {
   margin-top: 10vh;
   margin-left: 20vw;
   z-index: 2;
+  pointer-events: none;
 }
 
 #text {
