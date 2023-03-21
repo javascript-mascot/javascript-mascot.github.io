@@ -1,4 +1,4 @@
-![Screenshot](./screenshot.png)
+![Screenshot](./screenshot-01.png)
 
 The homepage of JavaScript mascot
 
