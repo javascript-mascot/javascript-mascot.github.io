@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* -webkit-user-select: none;
+  user-select: none; */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+a,
+a:visited {
+  color: inherit;
+  font-weight: 800;
+}
+
+#bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background-image: url("../assets/field.svg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: clamp(40px, 7vw, 100px);
+  color: white;
+  text-shadow: 6px 6px 0px black;
+  padding: 1vw;
+  text-align: center;
+  width: 100vw;
+  font-weight: 1000;
+}
+
+#mascot {
+  position: absolute;
+  bottom: 10vh;
+  left: -10vw;
+  width: clamp(200px, 70vw, 1200px);
+  margin-top: 10vh;
+  margin-left: 20vw;
+}
+
+#text {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  max-width: 500px;
+  background-color: white;
+  box-shadow: 6px 6px 0px;
+  border-radius: 30px;
+  padding: 2em;
+}
+
+#text > p {
+  margin: 0.4em;
+}
+
+#wikimedia,
+#github {
+  width: 40px;
+  margin: 0.5em;
+}
+
+#cc {
+  margin: 0.5em;
+  width: 100px;
+}
+
+#email {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 900px) {
+  #header {
+    text-shadow: 3px 3px 0px black;
+  }
+
+  #mascot {
+    bottom: 2vh;
+  }
+
+  #text {
+    top: 6em;
+    max-height: fit-content;
+    box-shadow: 4px 4px 0px;
+    margin: 0 1em;
+    padding: 1em;
+  }
+
+  #wikimedia,
+  #github {
+    width: 30px;
+    margin: 0.5em;
+  }
+}
