@@ -1,6 +1,6 @@
 ![Screenshot](./screenshot-01.png)
 
-The homepage of JavaScript mascot
+The homepage of the JavaScript mascot
 
 ## URLs
 
