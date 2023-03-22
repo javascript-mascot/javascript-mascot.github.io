@@ -59,7 +59,8 @@ a:visited {
   position: absolute;
   bottom: 10vh;
   left: -10vw;
-  width: clamp(200px, 70vw, 1200px);
+  /* width: clamp(200px, 70vw, 1200px); */
+  width: min(clamp(200px, 70vw, 1200px), clamp(200px, 90vh, 1200px));
   margin-top: 10vh;
   margin-left: 20vw;
   z-index: 2;
