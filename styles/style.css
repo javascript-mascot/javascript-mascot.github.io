@@ -1,90 +1,86 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,700;1,800;1,900;1,1000&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
+::selection {
+  background-color: #f7df1e;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: rgba(0, 0, 0, 0);
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 a,
 a:visited {
   color: inherit;
   font-weight: 800;
-  font-size: 1.2em;
 }
 
-#bg {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-image: url("../assets/field.svg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+header {
+  margin: 20px;
 }
 
-#header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: clamp(40px, 7vw, 100px);
-  color: white;
-  text-shadow: 6px 6px 0px black;
-  padding: 1vw;
-  text-align: center;
-  width: 100vw;
+h1 {
   font-weight: 1000;
-  white-space: nowrap;
+  font-style: normal;
+  font-size: 4em;
+  text-align: center;
+  line-height: 55px;
+}
+
+.window {
+  padding: 30px 20px;
+  box-shadow: 8px 8px 0px;
+  border: 4px solid black;
+}
+
+h2 {
+  font-weight: 400;
+  font-weight: 1000;
+
+  font-style: normal;
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 1000;
 }
 
 #mascot {
-  position: absolute;
-  bottom: 10vh;
-  left: -10vw;
-  /* width: clamp(200px, 70vw, 1200px); */
-  width: min(clamp(200px, 70vw, 1200px), clamp(200px, 90vh, 1200px));
-  margin-top: 10vh;
-  margin-left: 20vw;
-  z-index: 2;
-  pointer-events: none;
+  margin-bottom: 10px;
 }
 
-#text {
-  position: absolute;
-  bottom: 2em;
-  right: 2em;
+img {
   max-width: 500px;
-  background-color: white;
-  box-shadow: 8px 8px 0px;
-  border: 4px solid black;
-  padding: 1.5em 1em;
+  margin: 40px 0 5px 0;
 }
 
-#text > h2 {
-  font-size: 2.2em;
-  font-weight: 900;
+p {
+  font-size: 1.2em;
+  max-width: 55ch;
 }
 
-#text > p {
-  margin: 0.4em;
+.caption {
+  font-style: italic;
+  font-size: 1.1em;
 }
 
 #icons-container {
@@ -92,57 +88,60 @@ a:visited {
   justify-content: center;
 }
 
+#cc {
+  margin-top: 10px;
+}
+
 #cc,
-#js {
-  margin: -0.5em 0 -0.5em 0.5em;
-  height: 40px;
+#agpl {
+  height: 60px;
 }
 
 #email {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 800;
 }
 
-@media only screen and (max-width: 900px) {
-  a {
-    font-size: 1em;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 10px 0;
+  font-size: 0.85em;
+  font-weight: 800;
+}
+
+#footer-mascot {
+  margin-left: -5px;
+}
+
+#js,
+#footer-mascot {
+  height: 100px;
+}
+
+#footer-icons {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0 10vw;
   }
 
-  #header {
-    text-shadow: 3px 3px 0px black;
-    font-size: 10vw;
+  .window {
+    padding: 0;
+    box-shadow: none;
+    border: none;
   }
 
-  #mascot {
-    bottom: 2vh;
-  }
-
-  #text {
-    top: 5em;
-    left: 0;
-    right: 0;
-    max-height: fit-content;
-    max-width: 700px;
-    box-shadow: 4px 4px 0px;
-    margin: 0 1em;
-    padding: 1em;
-  }
-
-  #text > h2 {
-    font-size: 1.2em;
-  }
-
-  #text > p {
-    margin: 0.2em;
-    font-size: 1em;
-  }
-
-  #email {
-    font-size: 1em;
+  img {
+    width: 100%;
   }
 
   #cc,
-  #js {
-    display: none;
+  #agpl {
+    height: auto;
+    width: 50%;
   }
 }

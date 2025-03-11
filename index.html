@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <meta name="description" content="A mascot for JavaScript." />
     <meta
       name="keywords"
@@ -21,40 +27,102 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <div id="bg"></div>
-    <h1 id="header">JavaScript Mascot</h1>
-    <img
-      id="mascot"
-      src="./assets/javaScript_mascot.svg"
-      alt="JavaScript mascot"
-    />
-    <div id="text">
-      <h2>A mascot for JavaScript.</h2>
-      <p>
-        A yellow creature with three eyes, holding a JavaScript flag.<br />A
-        distant relative of the Lisp mascot.
-      </p>
-      <p>
-        The image in various sizes and formats can be found in
-        <a
-          href="https://commons.wikimedia.org/wiki/Category:JavaScript_mascot"
-          target="_blank"
-        >Wikimedia Commons</a>
-        and in
-        <a
-          href="https://github.com/JavaScript-Mascot/javascript-mascot"
-          target="_blank"
-          >GitHub</a
-        >.
-      </p>
-      <p>
-        The mascot belongs to the community. Any contributions and any ideas or
-        proposals for improvements or modifications are more than welcome! If
-        you create any artwork using the mascot, please share it!
-        <span id="email">javascriptmascot@gmail.com</span>
-      </p>
-      <br />
-      <div id="icons-container">
+    <header>
+      <h1>JavaScript Mascot</h1>
+    </header>
+
+    <main>
+      <img
+        id="mascot"
+        src="./assets/javaScript_mascot.svg"
+        alt="JavaScript mascot"
+      />
+      <div class="window">
+        <h3>A mascot for JavaScript!</h3>
+        <p>A yellow creature with three eyes, holding a JavaScript flag.</p>
+        <p>A distant relative of the Lisp mascot.</p>
+        <br />
+        <p>
+          All images are licensed under
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            >CC BY-SA 4.0</a
+          >.
+        </p>
+      </div>
+
+      <h2>Community</h2>
+      <div class="window">
+        <h3>The mascot belongs to the community.</h3>
+        <p>
+          Our mascot is a symbol of our community, and we’d love to hear your
+          ideas, suggestions, and any improvements or changes you think could
+          make it better!
+        </p>
+        <br />
+        <p>
+          If you've created any artwork featuring the mascot or have ideas for
+          the website, we encourage you to share them with us!
+        </p>
+        <br />
+        <p>Send your creations or proposals to:</p>
+        <p id="email">javascriptmascot@gmail.com</p>
+      </div>
+
+      <h2>Gallery</h2>
+      <div class="window">
+        <p>Feeling creative?</p>
+        <p>Share your work and get it featured in the gallery!</p>
+      </div>
+
+      <img
+        src="./assets/javascript_mascot_bliss.png"
+        alt="JavaScript mascot bliss"
+      />
+      <p class="caption">Bliss</p>
+
+      <img
+        src="./assets/javascript_mascot_typescript.svg"
+        alt="TypeScript mascot"
+      />
+      <p class="caption">Holding a TypeScript flag</p>
+
+      <img src="./assets/javascript_mascot_react.svg" alt="React mascot" />
+      <p class="caption">Holding a React flag</p>
+
+      <img
+        src="./assets/javascript_mascot_transgender_pride_flag.svg"
+        alt="JavaScript mascot on the transgender pride flag"
+      />
+      <p class="caption">On the transgender pride flag</p>
+
+      <img
+        src="./assets/640px-pixel-art-js-mascot.png"
+        alt="JavaScript mascot pixel art"
+      />
+      <p class="caption">Pixel art</p>
+
+      <img src="./assets/fan-01-512.png" alt="JavaScript mascot fan art" />
+      <p class="caption">Victory for JavaScript!</p>
+
+      <img
+        src="./assets/ascii_light.png"
+        alt="JavaScript mascot as ASCII art"
+      />
+      <p class="caption">As ASCII art</p>
+
+      <h2>Shop</h2>
+      <div class="window">
+        <p>We're not selling any t-shirts; this is just to give you an idea!</p>
+      </div>
+      <img
+        src="./assets/JavaScript_mascot_tshirt.png"
+        alt="JavaScript mascot tshirt"
+      />
+
+      <h2>License</h2>
+      <div class="window">
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0/"
           target="_blank"
@@ -63,12 +131,61 @@
             src="./assets/cc.svg"
             alt="Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) logo"
         /></a>
+        <p>
+          All images are licensed under the
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            >Creative Commons Attribution-ShareAlike 4.0 license (CC BY-SA
+            4.0)</a
+          >.
+        </p>
+        <br />
+        <p>
+          They can be found in various sizes and formats in
+          <a
+            href="https://github.com/JavaScript-Mascot/javascript-mascot"
+            target="_blank"
+            >GitHub</a
+          >.
+        </p>
+
+        <a href="https://www.gnu.org/licenses/agpl-3.0.html"
+          ><img
+            id="agpl"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg"
+        /></a>
+        <p>
+          The website is licensed under the
+          <a href="https://www.gnu.org/licenses/agpl-3.0.html"
+            >GNU Affero General Public License v3.0.</a
+          >
+        </p>
+        <br />
+        <p>
+          The source code is available in
+          <a
+            href="https://github.com/javascript-mascot/javascript-mascot.github.io"
+            target="_blank"
+            >GitHub</a
+          >.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-icons">
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           target="_blank"
           ><img id="js" src="./assets/js.svg" alt="JavaScript logo"
         /></a>
+        <img
+          id="footer-mascot"
+          src="./assets/javaScript_mascot.svg"
+          alt="JavaScript mascot"
+        />
       </div>
-    </div>
+      <p>© Michael Kolesidis & JavaScript Mascot</p>
+    </footer>
   </body>
 </html>

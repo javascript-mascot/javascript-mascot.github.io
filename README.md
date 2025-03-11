@@ -4,9 +4,9 @@ The homepage of the JavaScript mascot
 
 ## URLs
 
-- https://javascript-mascot.github.io/ (main)
-- https://javascriptmascot.github.io/ (mirror)
-- https://javascript-mascot.vercel.app/ (mirror)
+- <https://javascript-mascot.github.io/> (main)
+- <https://javascriptmascot.github.io/> (mirror)
+- <https://javascript-mascot.vercel.app/> (mirror)
 
 ## License
 
