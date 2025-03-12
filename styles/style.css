@@ -1,3 +1,4 @@
+/* JavaScript Mascot */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,8 @@
   background-color: #f7df1e;
 }
 
-body,
-html {
+html,
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +25,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: white;
+  padding: 0 50px 100px 50px;
 }
 
 a,
@@ -33,7 +36,11 @@ a:visited {
 }
 
 header {
-  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -41,19 +48,23 @@ h1 {
   font-style: normal;
   font-size: 4em;
   text-align: center;
-  line-height: 55px;
+  background-color: #f7df1e;
+  padding: 0 20px;
+  max-width: fit-content;
+  text-align: center;
+  transform: rotate(-2.5deg);
 }
 
 .window {
   padding: 30px 20px;
   box-shadow: 8px 8px 0px;
   border: 4px solid black;
+  max-width: 60ch;
 }
 
 h2 {
   font-weight: 400;
   font-weight: 1000;
-
   font-style: normal;
   font-size: 2.5em;
   margin-top: 50px;
@@ -95,6 +106,7 @@ p {
 #cc,
 #agpl {
   height: 60px;
+  filter: grayscale(1) contrast(1.5);
 }
 
 #email {
@@ -106,9 +118,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0 10px 0;
+  padding: 0 0 10px 0;
   font-size: 0.85em;
   font-weight: 800;
+  background-color: white;
+  width: 100%;
 }
 
 #footer-mascot {
@@ -124,9 +138,22 @@ footer {
   display: flex;
 }
 
+#screenshot {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     padding: 0 10vw;
+    background-color: white;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  h1 {
+    line-height: 55px;
   }
 
   .window {

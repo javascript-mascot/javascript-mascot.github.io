@@ -1,3 +1,5 @@
 /**
- * A page for the JavaScript mascot without any JavaScript???
+ * JavaScript Mascot
+ *
+ * A website for the JavaScript mascot without any JavaScript???
  */
