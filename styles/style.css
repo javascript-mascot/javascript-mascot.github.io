@@ -1,4 +1,5 @@
 /* JavaScript Mascot */
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: white;
   padding: 0 50px 100px 50px;
 }
 
@@ -37,7 +37,6 @@ a:visited {
 
 header {
   padding: 20px;
-  background-color: white;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -49,7 +48,7 @@ h1 {
   font-size: 4em;
   text-align: center;
   background-color: #f7df1e;
-  padding: 0 20px;
+  padding: 3px 20px;
   max-width: fit-content;
   text-align: center;
   transform: rotate(-2.5deg);
@@ -58,12 +57,11 @@ h1 {
 .window {
   padding: 30px 20px;
   box-shadow: 8px 8px 0px;
-  border: 4px solid black;
+  border: 4px solid #0a0a0a;
   max-width: 60ch;
 }
 
 h2 {
-  font-weight: 400;
   font-weight: 1000;
   font-style: normal;
   font-size: 2.5em;
@@ -105,7 +103,7 @@ p {
 
 #cc,
 #agpl {
-  height: 60px;
+  height: 50px;
   filter: grayscale(1) contrast(1.5);
 }
 
@@ -121,16 +119,10 @@ footer {
   padding: 0 0 10px 0;
   font-size: 0.85em;
   font-weight: 800;
-  background-color: white;
   width: 100%;
 }
 
-#footer-mascot {
-  margin-left: -5px;
-}
-
-#js,
-#footer-mascot {
+#js{
   height: 100px;
 }
 
@@ -145,7 +137,6 @@ footer {
 @media only screen and (max-width: 768px) {
   body {
     padding: 0 10vw;
-    background-color: white;
   }
 
   main {
@@ -154,6 +145,15 @@ footer {
 
   h1 {
     line-height: 55px;
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.25em;
   }
 
   .window {
@@ -169,6 +169,10 @@ footer {
   #cc,
   #agpl {
     height: auto;
-    width: 50%;
+    width: 40%;
+  }
+
+  #js {
+    height: 70px;
   }
 }
